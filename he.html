@@ -1,0 +1,547 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> ></script> 
+
+<!--   i try using a github library but its not working for js slider so i have ise a input button
+
+  as u said to focus on the code   so i use simple method to be more accurate on algos
+ -->
+ 
+<title>Escapa v2.0!</title>
+
+<style type="text/css">
+  #score{
+    
+    left: 100px;
+    position: absolute;
+    
+  width: 200px;
+  height: 30px;
+  
+  border: 1px solid #FFCC00 ;
+  border-radius: 5px ;
+  color: #FFCC00;
+  font-family: 'Exo', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  padding: 4px;
+  text-align: center;
+  }
+
+.slider { 
+  width: 300px; 
+  padding: 10px;
+  position: absolute;
+  left: 190px;
+  top: 510px;
+  height: 35px;
+  
+
+
+}
+.drop{
+
+  
+  position: absolute;
+  left: 170px;
+  top: 597px;
+  
+
+}
+</style>
+ 
+<script language="JavaScript" type="text/javascript" src="he.js"> </script>
+ 
+ 
+<body text="#000000" bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+ 
+ 
+<!-- red box -->
+<div id="box"  class="red" style="LEFT: 205px; WIDTH: 40px; POSITION: absolute; TOP: 205px; HEIGHT: 40px; BACKGROUND-COLOR: #990000; layer-background-color: #990000">
+<table height="40" width="40">
+  <tbody>
+  <tr>
+    <td>&nbsp;</td></tr></tbody></table></div>
+ 
+<!-- bluebox - 0 -->
+<div id="enemy0" style="LEFT: 270px; WIDTH: 60px; POSITION: absolute; TOP: 60px; HEIGHT: 50px; BACKGROUND-COLOR: #000099; layer-background-color: #000099">
+<table height="50" width="60">
+  <tbody>
+  <tr>
+    <td>&nbsp;</td></tr></tbody></table></div>
+ 
+<!-- bluebox - 1 -->
+<div id="enemy1" style="LEFT: 300px; WIDTH: 100px; POSITION: absolute; TOP: 330px; HEIGHT: 20px; BACKGROUND-COLOR: #000099; layer-background-color: #000099">
+<table height="20" width="100">
+  <tbody>
+  <tr>
+    <td>&nbsp;</td></tr></tbody></table></div>
+ 
+<!-- bluebox - 2 -->
+<div id="enemy2" style="LEFT: 70px; WIDTH: 30px; POSITION: absolute; TOP: 320px; HEIGHT: 60px; BACKGROUND-COLOR: #000099; layer-background-color: #000099">
+<table height="60" width="30">
+  <tbody>
+  <tr>
+    <td>&nbsp;</td></tr></tbody></table></div>
+ 
+<!-- bluebox - 3 -->
+<div id="enemy3" style="LEFT: 70px; WIDTH: 60px; POSITION: absolute; TOP: 70px; HEIGHT: 60px; BACKGROUND-COLOR: #000099; layer-background-color: #000099">
+<table height="60" width="60">
+  <tbody>
+  <tr>
+    <td>&nbsp;</td></tr></tbody></table></div>
+
+   <div id="score">score </div> 
+  
+   <div class="slider">
+    <input type="text"   id="holder" name="holder" value="80"><br>
+
+     
+   </div>
+
+   <div>
+     <select class="drop" value="white">
+    <option value="white">white</option>
+    <option value="green">green</option>
+    <option value="yellow">yellow</option>
+    <option value="red">red</option>
+     </select>
+   </div>
+
+
+
+<table cellspacing="0" cellpadding="0" border="0"><!-- row 1 -->
+  <tbody>
+  <tr>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td></tr><!-- row 2 -->
+  <tr>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td></tr><!-- row 3 -->
+  <tr>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td></tr><!-- row 4 -->
+  <tr>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td></tr><!-- row 5 -->
+  <tr>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td></tr><!-- row 6 -->
+  <tr>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td></tr><!-- row 7 -->
+  <tr>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td></tr><!-- row 8 -->
+  <tr>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td></tr><!-- row 9 -->
+  <tr>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+ 
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr></tbody></table></td>
+    <td width="50" bgcolor="#000000" height="50">
+      <table>
+        <tbody>
+        <tr>
+          <td></td></tr>
+      </tbody>
+   </table>
+</td>
+</tr>
+</tbody>
+</table>
+Player instruction:
+<br>Click and hold the red square.
+<br>Now, move it so that you neither touch the walls nor get hit by any of the blue blocks
+<br>If you make it to 18 seconds, you are doing brilliantly!
+<br>enter here speed u want to play
+<br>default speed is 80
+<br> additiona features
+<br>after every 20 ponts u will get 5 bonus point
+<br>select theme from list
+
+
+</body></html>
