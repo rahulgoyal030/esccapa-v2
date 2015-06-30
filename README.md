@@ -1,6 +1,6 @@
 # esccapa-v2
 html based game.. a  hackearth challenge question in which our task was to modify the give app
-we  had t add the functionality to the 
+we  had tp add the functionality to the app
 
 this was the list of the task ..which we have to perform
 
